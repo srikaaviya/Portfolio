@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Sri Kaaviya.</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; text-align: left; gap: 2rem; background-color: #ffffff;">
+        <div class="hero-content fade-in" style="flex: 1; max-width: 600px; z-index: 2;">
+            <h1>Hello, I'm Sri Kaaviya.<br><span style="font-size: 2.5rem; color: var(--text-secondary);">I'm a <span class="typing-text"></span><span class="cursor">&nbsp;</span></span></h1>
+            <p style="margin-left: 0; margin-right: 0;">Building robust systems with Python, SQL, and a relentless dedication to backend development.</p>
+            <div class="hero-buttons" style="justify-content: flex-start;">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#opensource" class="btn secondary-btn">More About Me</a>
+            </div>
+        </div>
+        <div class="hero-image fade-in" style="flex: 1; z-index: 2; display: flex; justify-content: center; align-items: center; max-width: 450px; margin-left: auto;">
+            <img src="workspace.png" alt="Workspace Photography" style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+        <div class="hero-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container fade-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Software Engineer focused on building robust systems with Python and SQL. I hold a Masters in Information Technology and am advancing my expertise in Software Engineering and Quality at UCSC Silicon Valley Extension. As a disciplined self-starter, I apply modern engineering practices to write clean, high-coverage code and bring a relentless dedication to backend development.</p>
+                
+                <p>I solve complex backend challenges through hands-on development and active open-source collaboration. I have successfully engineered and merged pull requests for major repositories, including OpenTelemetry, Poetry, and MoinMoin. Beyond open source, I build practical, architecture-driven tools. My recent projects range from a weather-based travel packing application powered by Flask, PostgreSQL, Celery, and Docker, to a RAG-pipeline AI triage agent.</p>
+                
+                <p>I am deeply committed to code quality and test automation. I engineered pytestgen-ai, a specialized CLI tool that uses AST parsing and structured LLM prompts to auto-generate test files, demonstrating my deep understanding of test-driven development and code analysis.</p>
+                
+                <p>I am seeking an entry-level software engineering role in development or Test. I bring technical rigor, a strong architectural foundation, and an unwavering commitment to continuous learning to any collaborative team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section id="opensource" class="opensource section" style="background-color: #f0f4f2;">
+        <div class="container">
+            <h2 class="section-title fade-up">Open Source Contributions</h2>
+            <div class="project-grid">
+                
+                <!-- OS 1 -->
+                <div class="project-card fade-up">
+                    <div class="project-tag">Observability</div>
+                    <h3>Open Telemetry</h3>
+                    <a href="https://github.com/open-telemetry/opentelemetry-python-contrib" target="_blank" class="project-link">GitHub ↗</a>
+                    <p class="mt-3">Merged multiple pull requests enhancing the observability framework, including Falcon instrumentation, Sphinx documentation updates, and Pylint configurations.</p>
+                </div>
+
+                <!-- OS 2 -->
+                <div class="project-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="project-tag">Grading Platform</div>
+                    <h3>Submitty</h3>
+                    <a href="https://github.com/Submitty/Submitty" target="_blank" class="project-link">GitHub ↗</a>
+                    <p class="mt-3">Authored and merged core pull requests to cleanup stale locks and implement non-numeric section name handling. Fixed an autograding classification bug by correcting team detection logic.</p>
+                </div>
+
+                <!-- OS 3 -->
+                <div class="project-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="project-tag">Packaging</div>
+                    <h3>Python Poetry</h3>
+                    <a href="https://github.com/python-poetry/poetry" target="_blank" class="project-link">GitHub ↗</a>
+                    <p class="mt-3">Contributed to the Python packaging and dependency management tool by merging core functionality.</p>
+                </div>
+
+                <!-- OS 4 -->
+                <div class="project-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="project-tag">Wiki Engine</div>
+                    <h3>MoinMoin Wiki</h3>
+                    <a href="https://github.com/moinwiki/moin" target="_blank" class="project-link">GitHub ↗</a>
+                    <p class="mt-3">Successfully merged many pull requests addressing core engine functionalities, specifically improving display names, page link creation, and binary file uploads.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title fade-up">Featured Projects</h2>
+            <div class="project-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card fade-up">
+                    <div class="project-tag">Top 2.7% Hackathon</div>
+                    <h3>AI Support Triage Agent</h3>
+                    <p class="project-subtitle">HackerRank Orchestrate 24hr Hackathon</p>
+                    <p>Built a terminal-based AI support triage agent. Processes support tickets across 3 product ecosystems (HackerRank, Anthropic Claude, and Visa) using a RAG pipeline with ChromaDB and sentence-transformers. Implemented a multi-layer safety architecture — word-boundary keyword filtering and LLM-based harm detection. Ranked 325 out of 12,000+ participants — Top 2.7%.</p>
+                    <div class="tech-stack">
+                        <span>RAG</span>
+                        <span>ChromaDB</span>
+                        <span>Sentence-Transformers</span>
+                        <span>LLM</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="project-tag">Full-Stack App</div>
+                    <h3>AI Packing Assistant</h3>
+                    <p class="project-subtitle">Smart Travel Assistant</p>
+                    <p>A smart travel assistant that asks about your destination, fetches live weather forecasts via OpenWeatherMap, and generates a personalized packing list. Powered by Groq API (Llama 3.3-70b) for natural conversations. Packing lists are delivered directly to your email. Containerized with Docker for consistent environments.</p>
+                    <div class="tech-stack">
+                        <span>Flask</span>
+                        <span>PostgreSQL</span>
+                        <span>Celery</span>
+                        <span>Docker</span>
+                        <span>Groq API</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="project-tag">Open Source</div>
+                    <h3>Pytestgen-ai</h3>
+                    <p class="project-subtitle">PyPI Package</p>
+                    <p>Engineered a Python CLI tool that statically analyzes source code using the ast module — extracting function signatures and class hierarchies — and feeds context into Groq AI via structured prompts to generate accurate pytest unit tests. Detects external calls and auto-mocks dependencies. Published on PyPI.</p>
+                    <div class="tech-stack mb-3">
+                        <span>Python</span>
+                        <span>AST</span>
+                        <span>Groq AI</span>
+                        <span>Pytest</span>
+                        <span>Asyncio</span>
+                    </div>
+                    <a href="https://pypi.org/project/pytestgen-ai/" target="_blank" class="btn primary-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; display: inline-block; margin-top: 1.5rem;">View on PyPI</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section" style="background-color: #f0f4f2;">
+        <div class="container">
+            <h2 class="section-title fade-up">Technical Skills</h2>
+            <div class="project-grid">
+                
+                <div class="project-card fade-up">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Languages</h3>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay: 0.1s;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Testing & Automation</h3>
+                    <div class="tech-stack">
+                        <span>Selenium</span>
+                        <span>Playwright</span>
+                        <span>Pytest</span>
+                        <span>Test Automation</span>
+                        <span>Test Cases</span>
+                        <span>Debugging</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay: 0.2s;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Software Engineering</h3>
+                    <div class="tech-stack">
+                        <span>OOP</span>
+                        <span>DSA</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay: 0.3s;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Version Control & CI/CD</h3>
+                    <div class="tech-stack">
+                        <span>GitHub Actions</span>
+                        <span>CI/CD Pipelines</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay: 0.1s;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Cloud & Containers</h3>
+                    <div class="tech-stack">
+                        <span>Docker</span>
+                        <span>AWS Fundamentals</span>
+                        <span>Containerization</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-up" style="transition-delay: 0.2s;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Databases & Tools</h3>
+                    <div class="tech-stack">
+                        <span>PostgreSQL</span>
+                        <span>SQLite</span>
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>Django</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container fade-up">
+            <h2 class="section-title">Education</h2>
+            <div class="education-list" style="max-width: 800px; margin: 0 auto;">
+                
+                <div class="education-item" style="margin-bottom: 2rem; padding: 2rem; background: #fff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Certificate, Software Engineering & Quality Assurance</h3>
+                    <p style="color: var(--accent-green); font-weight: 600; margin-bottom: 0.5rem;">UC Santa Cruz Extension | <span style="color: #666;">2025 - Present</span> | <span style="color: var(--text-primary);">GPA: 4.0</span></p>
+                </div>
+
+                <div class="education-item" style="padding: 2rem; background: #fff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Master of Science, Information Technology</h3>
+                    <p style="color: var(--accent-green); font-weight: 600; margin-bottom: 0.5rem;">CEG, Guindy, Anna University | <span style="color: #666;">2011 - 2016</span> | <span style="color: var(--text-primary);">GPA: 3.4</span></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates section">
+        <div class="container">
+            <h2 class="section-title fade-up">Certificates</h2>
+            <div class="project-grid">
+                
+                <!-- Cert 1 -->
+                <div class="project-card fade-up">
+                    <div class="project-tag">DeepLearning.AI</div>
+                    <h3>Prompt Engineering Certificate</h3>
+                    <p class="mt-3">Certified in Prompt Engineering by DeepLearning.AI, demonstrating expertise in crafting effective prompts for large language models and building AI-powered applications.</p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="project-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="project-tag">Bootcamp</div>
+                    <h3>Software Testing Bootcamp</h3>
+                    <p class="mt-3">Completed an intensive 27-hour bootcamp covering comprehensive software testing methodologies and practices.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests section" style="background-color: #f0f4f2;">
+        <div class="container fade-up">
+            <h2 class="section-title">Beyond Code</h2>
+            <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.15rem; color: #4a5d53; margin-bottom: 1.5rem;">When I'm not architecting backend systems, you'll likely find me staying active and energized through physical fitness. I run on good coffee and love getting lost in a great book.</p>
+                <p style="font-size: 1.15rem; color: #4a5d53;">I'm also a hands-on creator off the keyboard—I love diving into DIY projects to build and fix things around the house.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="footer" id="contact" style="background: #1B4332; color: #fff; padding: 4rem 5%; text-align: center;">
+        <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #fff;">Get In Touch</h2>
+        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 3rem;">
+            
+            <a href="mailto:srikaaviya3@gmail.com" style="color: #D8F3DC; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; transition: color 0.3s;">
+                <!-- Mail Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                srikaaviya3@gmail.com
+            </a>
+
+            <a href="https://github.com/srikaaviya" target="_blank" style="color: #D8F3DC; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; transition: color 0.3s;">
+                <!-- GitHub Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                github.com/srikaaviya
+            </a>
+
+            <a href="https://linkedin.com/in/sri-kaaviya" target="_blank" style="color: #D8F3DC; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; transition: color 0.3s;">
+                <!-- LinkedIn Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                linkedin.com/in/sri-kaaviya
+            </a>
+
+            <a href="tel:+10000000000" title="Call Me" style="color: #D8F3DC; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; transition: color 0.3s;">
+                <!-- Phone Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <!-- Number is hidden visually but opens dialer when clicked -->
+            </a>
+
+        </div>
+        <p style="color: #40916C;">&copy; 2026. Built with dedication.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
