@@ -122,14 +122,18 @@
                     <div class="project-tag">Full-Stack App</div>
                     <h3>AI Packing Assistant</h3>
                     <p class="project-subtitle">Smart Travel Assistant</p>
-                    <p>A smart travel assistant that asks about your destination, fetches live weather forecasts via OpenWeatherMap, and generates a personalized packing list. Powered by Groq API (Llama 3.3-70b) for natural conversations. Packing lists are delivered directly to your email. Containerized with Docker for consistent environments.</p>
-                    <div class="tech-stack">
+                    <ul style="padding-left: 1.2rem; margin-top: 1rem; margin-bottom: 1rem; color: #4a5d53;">
+                        <li style="margin-bottom: 0.5rem;">Built an LLM-powered travel assistant that extracts destinations from natural language via Groq API, fetches real-time weather from OpenWeatherMap, and implements a session-based state machine to handle multi-turn conversations — generating personalized packing lists with async email delivery via Celery/Redis.</li>
+                        <li style="margin-bottom: 0.5rem;">Designed a service-oriented backend (modular AI and weather services), PostgreSQL persistence using raw SQL via psycopg2, JWT authentication, regex fallback for LLM JSON parsing, and Docker Compose containerization; deployed to Railway with Gunicorn.</li>
+                    </ul>
+                    <div class="tech-stack mb-3">
                         <span>Flask</span>
                         <span>PostgreSQL</span>
                         <span>Celery</span>
                         <span>Docker</span>
                         <span>Groq API</span>
                     </div>
+                    <a href="https://web-production-fdaab.up.railway.app" target="_blank" class="btn primary-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; display: inline-block; margin-top: 1.5rem;">Live Demo ↗</a>
                 </div>
 
                 <!-- Project 3 -->
