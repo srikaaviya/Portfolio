@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing effect in Hero
     const textArray = [
-        "Recruiting & HR Coordinator.",
-        "AI Automation Workflows.",
         "Software Engineer.",
+        "Developer.",
         "Python & API Expert.",
-        "System Engineer."
+        "Software Dev in Test.",
+        "Quality Engineer."
     ];
     const typingDelay = 100;
     const erasingDelay = 50;
